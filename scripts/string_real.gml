@@ -6,6 +6,6 @@ str = string_letters(str);
 
 if string_length(str) = 0 {
     return true;
-} else return false;
-
-
+} else {
+    return false;
+}
