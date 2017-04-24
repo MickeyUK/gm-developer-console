@@ -83,6 +83,11 @@ value = ""; // The textbox value
 maxlength = 100; // Max number of characters
 gui = false; // Draw in GUI event
 
+// Font
+fnt = fnt_open_sans_16; // Font
+fnt_c = c_black; // Font color
+fnt_a = 1; // Font alpha
+
 // Textbox Appearance
 textbox_x = 20; // X position for textbox
 textbox_y = 20; // Y position for textbox
@@ -98,11 +103,7 @@ active_c = c_white; // Active border color
 active_a = 1; // Active border alpha
 active_w = 2; // Active border width
 
-// Text
-fnt = fnt_open_sans_16; // Font
-fnt_c = c_black; // Font color
-fnt_a = 1; // Font alpha
-
+// Highlighting
 select_bg_c = c_black; // Highlighted bg color
 select_bg_a = 1; // Highlighted bg alpha
 select_fnt_c = c_white; // Highlighted text color
@@ -1275,6 +1276,7 @@ if (con_visible) {
         // Draw text
         draw_set_alpha(fnt_a);
         draw_set_color(fnt_c);
+        draw_set_font(fnt);
         draw_text(-scroll, 0, value);
         
         // If textbox active

@@ -21,9 +21,7 @@
     </scripts>
   </scripts>
   <fonts name="fonts">
-    <fonts name="Console">
-      <font>fonts\fnt_open_sans_16</font>
-    </fonts>
+    <font>fonts\fnt_open_sans_16</font>
   </fonts>
   <objects name="objects">
     <objects name="Console">
