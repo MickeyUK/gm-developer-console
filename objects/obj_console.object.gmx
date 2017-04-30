@@ -1090,7 +1090,7 @@ if (index != -1) {
                         
                     case "string":
                             if (!is_string(arg[a])) {
-                                show_debug_message("[CONSOLE] '"+command+"["+arg[a]+"]' needs to be a string.");
+                                show_debug_message("[CONSOLE] '"+command+"["+string(arg[a])+"]' needs to be a string.");
                                 exit;
                             }
                         break;
